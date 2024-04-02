@@ -1,0 +1,122 @@
+@font-face {
+  font-family: "yeyeyregular";
+  src: url("fonts/yeyey-1pk2-webfont.woff2") format("woff2"),
+    url("assets/yeyey-1pk2-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+html {
+  height: 100%;
+  width: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  margin: 0px;
+}
+
+.logo-text {
+  font-family: "yeyeyregular";
+  font-size: 2rem;
+}
+
+.image-container {
+  position: relative;
+  background-color: blue;
+  flex: 2;
+}
+
+.image-container img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.form-container {
+  flex: 4;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #f9fafb;
+}
+
+.form-container > p {
+  width: 70%;
+  margin: 30px 50px 50px 50px;
+  text-align: left;
+}
+
+button {
+  width: 200px;
+  margin: 30px 0px 0px 50px;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #feb5d0;
+  border-color: transparent;
+  box-shadow: 3px 10px 8px -6px #dcddde;
+}
+
+input[type="text"] {
+  padding: 10px;
+  border-radius: 5px;
+}
+
+a {
+  color: #cc7696;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+label {
+  margin-bottom: 5px;
+}
+
+.logo-container {
+  height: 30%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  background-color: rgba(255, 174, 216, 0.73);
+}
+
+.logo-container img {
+  height: 80%;
+  width: auto;
+  object-fit: contain;
+}
+
+form {
+  width: 100%;
+  background-color: white;
+  box-shadow: 3px 10px 8px -6px #dcddde;
+}
+
+form > * {
+  margin: 20px;
+}
+
+.inner-form-container {
+  display: flex;
+  flex-direction: row;
+}
+
+form input {
+  margin-bottom: 15px;
+}
+
+.form-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-col:nth-child(2) {
+  padding-left: 40px;
+}
