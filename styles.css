@@ -61,10 +61,21 @@ button {
   box-shadow: 3px 10px 8px -6px #dcddde;
 }
 
-input[type="text"] {
+input {
   padding: 10px;
   border-radius: 5px;
+  border: 1px solid #e0dcdc;
+  box-sizing: border-box;
 }
+
+input:focus {
+  outline-color: #6067eb;
+}
+
+.invalid {
+  border-color: #cf350e;
+}
+
 
 a {
   color: #cc7696;

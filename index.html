@@ -28,22 +28,30 @@
             <label for="first-name">First Name</label>
             <input id="first-name" type="text" required />
             <label for="email">Email</label>
-            <input id="email" type="text" required />
+            <input id="email" type="email" required />
             <label for="password">Password</label>
-            <input id="password" type="text" required />
+            <input id="password" type="password" required />
           </div>
           <div class="form-col">
             <label for="last-name">Last Name</label>
             <input id="last-name" type="text" required />
             <label for="phone-number">Phone Number</label>
-            <input id="phone-number" type="text" required />
+            <input
+              id="phone-number"
+              type="tel"
+              pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+              required
+            />
             <label for="confirm-password">Confirm Password</label>
-            <input id="confirm-password" type="text" required />
+            <input id="confirm-password" type="password" required />
           </div>
         </div>
       </form>
-      <button type="submit" form="get-started-form">Create Account</button>
+      <button id="submit-button" type="submit" form="get-started-form">
+        Create Account
+      </button>
       <p>Already have an account? <a href="login.html">Log In</a></p>
     </div>
   </body>
+  <script src="script.js"></script>
 </html>
